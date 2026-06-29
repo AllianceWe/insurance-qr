@@ -3,129 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name | Financial Consultant</title>
+<title>AllianceWe Insurance | Get Your Insurance Quote</title>
 
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    color: #333;
-}
-
-.header {
-    background: #0056b3;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.profile-pic {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    border: 4px solid white;
-    object-fit: cover;
-    margin-bottom: 15px;
+    background: linear-gradient(to bottom, #f7faff, #ffffff);
+    color: #1f2937;
 }
 
 .container {
-    max-width: 700px;
+    max-width: 500px;
     margin: auto;
-    padding: 20px;
+    padding: 30px 20px 50px;
+}
+
+.logo {
+    text-align: center;
+    color: #0b3d91;
+}
+
+.logo h1 {
+    margin-bottom: 5px;
+    font-size: 42px;
+}
+
+.logo p {
+    letter-spacing: 5px;
+    color: #4b5563;
+    margin-top: 0;
+}
+
+.hero {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.hero h2 {
+    color: #0b3d91;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #6b7280;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .card {
-    background: white;
-    border-radius: 15px;
-    padding: 25px;
-    margin-bottom: 20px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
-}
-
-.button {
-    display: block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    background: #0056b3;
+    background: white;
+    border-radius: 22px;
+    padding: 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
     color: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
+    margin-right: 20px;
 }
 
-.button:hover {
-    background: #003d82;
+.travel { background: #2563eb; }
+.home { background: #16a34a; }
+.pa { background: #db2777; }
+
+.content h3 {
+    margin: 0;
+    color: #111827;
+    font-size: 28px;
 }
 
-ul {
-    padding-left: 20px;
+.content p {
+    margin: 8px 0 0;
+    color: #6b7280;
+    font-size: 18px;
 }
-
 .footer {
     text-align: center;
-    color: #777;
+    color: #6b7280;
+    margin-top: 35px;
     font-size: 14px;
-    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .content h3 {
+        font-size: 22px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-    <img src="your-photo.jpg" class="profile-pic">
-    <h1>Your Name</h1>
-    <p>Financial Consultant | Alliance</p>
-</div>
-
 <div class="container">
 
-    <div class="card">
-        <h2>Get In Touch</h2>
-
-        <a class="button" href="https://wa.me/6591234567">
-            💬 WhatsApp Me
-        </a>
-
-        <a class="button" href="tel:+6591234567">
-            📞 Call Me
-        </a>
-
-        <a class="button" href="mailto:youremail@gmail.com">
-            📧 Email Me
-        </a>
-
-        <a class="button" href="https://calendly.com/yourlink">
-            📅 Book an Appointment
-        </a>
+    <div class="logo">
+        <h1>AllianceWe</h1>
+        <p>INSURANCE</p>
     </div>
 
-    <div class="card">
-        <h2>Services</h2>
-        <ul>
-            <li>Life Insurance</li>
-            <li>Health Insurance</li>
-            <li>Critical Illness Coverage</li>
-            <li>Retirement Planning</li>
-            <li>Investment Planning</li>
-            <li>Children Education Planning</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>Why Work With Me?</h2>
+    <div class="hero">
+        <h2>Get Your Insurance Quote</h2>
         <p>
-            I help individuals and families protect what matters most and
-            build financial confidence through personalised planning.
+            Simple. Fast. Secure.<br>
+            Choose the insurance plan you need a quotation for.
         </p>
     </div>
 
-</div>
+    <a class="card"
+       href="https://insure.ergo.com.sg/ergo-tp2/#/about?id=271223&token=7bedcbb1-0545-458d-bf6c-233d09dc004c&b2bc=true"
+       target="_blank">
+        <div class="icon travel">✈️</div>
+        <div class="content">
+            <h3>Travel Insurance</h3>
+            <p>Get a quote for your travel protection.</p>
+        </div>
+    </a>
 
-<div class="footer">
-    © 2026 Your Name. All Rights Reserved.
+    <a class="card"
+       href="https://insure.ergo.com.sg/ergo-fhs/#/about?id=271224&token=4f3bf991-a671-41c0-ab59-c2c2a18cd391&b2bc=true"
+       target="_blank">
+        <div class="icon home">🏠</div>
+        <div class="content">
+            <h3>Home Insurance</h3>
+            <p>Protect your home and loved ones.</p>
+        </div>
+    </a>
+
+    <a class="card"
+       href="https://insure.ergo.com.sg/ergo-pa/#/about?id=271225&token=d1854149-40ef-41f9-bb37-47bc468f2300&b2bc=true"
+       target="_blank">
+        <div class="icon pa">❤️</div>
+        <div class="content">
+            <h3>Personal Accident</h3>
+            <p>Stay protected against life's unexpected events.</p>
+        </div>
+    </a>
+    <div class="footer">
+        Powered by ERGO Insurance Singapore<br>
+        Secure • Reliable • Singapore Trusted
+    </div>
+
 </div>
 
 </body>
